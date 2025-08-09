@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shantanu | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <!-- AOS CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+
+<!-- AOS JS (put this at the end of body or in head) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // animation duration in ms
+    once: true      // whether animation should happen only once - while scrolling down
+  });
+</script>
+
+</head>
+<body>
+  <header>
+    <h1>Sushant Gupta</h1>
+    <p class="tagline">Aspiring Developer | BIT Mesra</p>
+    <button id="theme-toggle" class="theme-toggle" title="Toggle Theme">🌙</button>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="DA.pdf" download>Resume</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-wrapper">
+      <img src="shantanu.jpg" alt="Shantanu" class="profile-pic" />
+      <p>
+        ECE undergrad at BIT Mesra driven by curiosity for data and intelligent systems. Skilled in C++, Python, HTML/CSS/JS with React, Typescript and bootstrap. I enjoy challenging myself and outwit others, growing alongside my team and reaching newer heights.  <br><br>
+        Currently serving as <strong>President</strong> at the IETE Students' chapter BIT Mesra. I’m open to opportunities in Software Developement, Problem Solving, Management, and Blockchain related fields where I can contribute meaningfully and grow professionally.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+        <li><i class="fab fa-python"></i> Python</li>
+        <li><i class="fas fa-database"></i> SQL</li>
+        <li><i class="fas fa-table"></i> Excel</li>
+        <li><i class="fas fa-code"></i> C++</li>
+        <li><i class="fab fa-html5"></i> HTML</li>
+        <li><i class="fab fa-css3-alt"></i> CSS</li>
+        <li><i class="fab fa-js-square"></i> JavaScript</li>
+        <li><i class="fab fa-js"></i> TypeScript</li>
+        <li><i class="fab fa-react"></i> React</li>
+        <li><i class="fab fa-git-alt"></i> Git</li>
+        <li><i class="fab fa-github"></i> GitHub</li>
+        <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>🎮 TIC TAC TOE - Python</h3>
+        <p>Vanilla Javascript based tictactoe with symbol changing, moves times, tournament scorecard, winning animation and a better UI overall</p>
+      </div>
+      <div class="project-card">
+        <h3>📊 AdminView Dashboard</h3>
+        <p>Role-based dashboard to view, update, add, or delete information related to specific tasks, with clear role based authentication and distinction of tasks.</p>
+      </div>
+      <div class="project-card">
+        <h3>🌐 Portfolio Website</h3>
+        <p>This site was created using HTML, CSS, and JavaScript to showcase my skills, projects, and professional profile.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> <a href="mailto:sushantgupta@outlook.com">sushantgupta@outlook.com</a></p>
+    <p><strong>Phone:</strong> +91 88604 89995</p>
+    <p>
+    <strong>
+        <i class="fab fa-linkedin" style="color:#0A66C2;"></i> LinkedIn:
+    </strong>
+    <a href="https://www.linkedin.com/in/sushant-gupta-0aab48255/" target="_blank">
+        Visit My LinkedIn Profile
+    </a>
+    </p>
+    <p><strong><i class="fab fa-github"></i>GitHub:</strong> <a href="https://github.com/Sushant626" target="_blank">Visit My Github Profile</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sushant Gupta</p>
+  </footer>
+
+  <script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-theme');
+      const isDark = document.body.classList.contains('dark-theme');
+      toggleBtn.textContent = isDark ? '☀' : '🌙';
+    });
+  </script>
+</body>
+</html>
